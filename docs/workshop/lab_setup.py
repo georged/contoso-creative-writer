@@ -53,7 +53,7 @@ def github_auth(*, force: bool = False):
          '--hostname', 'github.com',
          '--git-protocol', 'https',
          '--web',
-         '--scopes', 'workflow'],
+         '--scopes', 'workflow public_repo'],
         stdin=subprocess.PIPE,
         env={**os.environ, 'GITHUB_TOKEN': ''},
         text=True
